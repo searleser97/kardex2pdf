@@ -38,6 +38,9 @@ function setPageBackgroundColor() {
     'style="height:400px;overflow-y:scroll;"': {
       "global": ""
     },
+    "ING. EN SIS. COMPUTACIONALES": {
+      "en": "computer systems engineering"
+    },
     "semestre": {
       "en": "level"
     },
@@ -66,7 +69,7 @@ function setPageBackgroundColor() {
       "en": "period"
     },
     "forma eval.": {
-      "en": "eval. mode"
+      "en": "type"
     },
     "calificacion": {
       "en": "grade"
@@ -80,8 +83,11 @@ function setPageBackgroundColor() {
     "boleta": {
       "en": "student id"
     },
+    "plan": {
+      "en": "plan"
+    },
     "nombre": {
-      "en": "name"
+      "en": "full name"
     },
     "carrera": {
       "en": "career"
