@@ -28,6 +28,8 @@ function setPageBackgroundColor() {
     return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
   };
 
+  const plan = document.getElementById("ctl00_mainCopy_Lbl_Plan").innerHTML;
+
   const translations = {
     "este documento es solamente informativo y carece de cualquier valid\u00E9z oficial": {
       "global": ""
@@ -55,6 +57,18 @@ function setPageBackgroundColor() {
     },
     "cuarto": {
       "en": "fourth"
+    },
+    "quinto": {
+      "en": "fifth"
+    },
+    "sexto": {
+      "en": "sixth"
+    },
+    "séptimo": {
+      "en": "seventh"
+    },
+    "octavo": {
+      "en": "eighth"
     },
     "materia": {
       "en": "course"
@@ -209,6 +223,9 @@ function setPageBackgroundColor() {
     "TRABAJO TERMINAL I": {
       "en": "TERMINAL PROJECT I"
     },
+    "TRABAJO TERMINAL II": {
+      "en": "TERMINAL PROJECT II"
+    },
     "LIDERAZGO Y DESARROLLO PROFESIONAL": {
       "en": "LEADERSHIP AND PROFESSIONAL DEVELOPMENT"
     },
@@ -218,6 +235,68 @@ function setPageBackgroundColor() {
     "DESARROLLO DE SISTEMAS DISTRIBUIDOS": {
       "en": "DEVELOPMENT OF DISTRIBUTED SYSTEMS"
     },
+
+    "MECANICA Y ELECTROMAGNETISMO": {
+      "en": "MECHANICS AND ELECTROMAGNETISM"
+    },
+    "CIRCUITOS ELECTRICOS": {
+      "en": "ELECTRICAL CIRCUITS"
+    },
+    "FINANZAS EMPRESARIALES": {
+      "en": "BUSINESS FINANCE"
+    },
+    "PARADIGMAS DE PROGRAMACIÓN": {
+      "en": "PROGRAMMING PARADIGMS"
+    },
+    "ANALISIS Y DISEÑO DE ALGORITMOS": {
+      "en": "ANALYSIS AND DESIGN OF ALGORITHMS"
+    },
+    "TEORIA DE LA COMPUTACION": {
+      "en": "COMPUTING THEORY"
+    },
+    "TECNOLOGIAS PARA EL DESARROLLO DE APLICACIONES WEB": {
+      "en": "TECHNOLOGIES FOR THE DEVELOPMENT OF WEB APPLICATIONS"
+    },
+    "PROCESAMIENTO DIGITAL DE SEÑALES": {
+      "en": "DIGITAL SIGNAL PROCESSING"
+    },
+    "INSTRUMENTACION Y CONTROL": {
+      "en": "INSTRUMENTATION AND CONTROL"
+    },
+    "ANALISIS Y DISEÑO DE SISTEMAS": {
+      "en": "ANALYSIS AND DESIGN OF SYSTEMS"
+    },
+    "FORMULACION Y EVALUACION DE PROYECTOS INFORMATICOS": {
+      "en": "FORMULATION AND EVALUATION OF IT PROJECTS"
+    },
+    "INTELIGENCIA ARTIFICIAL": {
+      "en": "ARTIFICIAL INTELLIGENCE"
+    },
+    "SISTEMAS EN CHIP": {
+      "en": "SYSTEMS ON CHIP"
+    },
+    "DESARROLLO DE APLICACIONES MOVILES NATIVAS": {
+      "en": "NATIVE MOBILE APPLICATION DEVELOPMENT"
+    },
+    "SISTEMAS DISTRIBUIDOS": {
+      "en": "DISTRIBUTED SYSTEMS"
+    },
+    "LIDERAZGO PERSONAL": {
+      "en": "PERSONAL LEADERSHIP"
+    },
+    "DESARROLLO DE HABILIDADES SOCIALES PARA LA ALTA DIRECCION": {
+      "en": "SOFT SKILLS DEVELOPMENT FOR SENIOR MANAGEMENT"
+    },
+    "ESTANCIA PROFESIONAL": {
+      "en": "PROFESSIONAL STAY"
+    },
+
+  };
+
+  if(plan == 20){
+    translations["semestre"] = {
+      "en": "semester"
+    }
   };
 
   const translate = (str, langCode) => {
