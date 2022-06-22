@@ -28,6 +28,8 @@ function setPageBackgroundColor() {
     return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
   };
 
+  const plan = document.getElementById("ctl00_mainCopy_Lbl_Plan").innerHTML;
+
   const translations = {
     "este documento es solamente informativo y carece de cualquier valid\u00E9z oficial": {
       "global": ""
@@ -56,6 +58,18 @@ function setPageBackgroundColor() {
     "cuarto": {
       "en": "fourth"
     },
+    "quinto": {
+      "en": "fifth"
+    },
+    "sexto": {
+      "en": "sixth"
+    },
+    "séptimo": {
+      "en": "seventh"
+    },
+    "octavo": {
+      "en": "eighth"
+    },
     "materia": {
       "en": "course"
     },
@@ -73,6 +87,12 @@ function setPageBackgroundColor() {
     },
     "calificacion": {
       "en": "grade"
+    },
+    "ene": {
+      "en": "jan"
+    },
+    "feb": {
+      "en": "feb"
     },
     "jun": {
       "en": "jun"
@@ -209,6 +229,9 @@ function setPageBackgroundColor() {
     "TRABAJO TERMINAL I": {
       "en": "TERMINAL PROJECT I"
     },
+    "TRABAJO TERMINAL II": {
+      "en": "TERMINAL PROJECT II"
+    },
     "LIDERAZGO Y DESARROLLO PROFESIONAL": {
       "en": "LEADERSHIP AND PROFESSIONAL DEVELOPMENT"
     },
@@ -218,6 +241,188 @@ function setPageBackgroundColor() {
     "DESARROLLO DE SISTEMAS DISTRIBUIDOS": {
       "en": "DEVELOPMENT OF DISTRIBUTED SYSTEMS"
     },
+
+    //ISC 2020 SUBJECTS
+
+    "FUNDAMENTOS DE PROGRAMACION": {
+      "en": "PROGRAMMING FUNDAMENTALS"
+    },
+    "MECANICA Y ELECTROMAGNETISMO": {
+      "en": "MECHANICS AND ELECTROMAGNETISM"
+    },
+    "ALGORITMOS Y ESTRUCTURAS DE DATOS": {
+      "en": "ALGORITHMS AND DATA STRUCTURES"
+    },
+    "CIRCUITOS ELECTRICOS": {
+      "en": "ELECTRICAL CIRCUITS"
+    },
+    "FINANZAS EMPRESARIALES": {
+      "en": "BUSINESS FINANCE"
+    },
+    "PARADIGMAS DE PROGRAMACION": {
+      "en": "PROGRAMMING PARADIGMS"
+    },
+    "ANALISIS Y DISE\u00D1O DE ALGORITMOS": {
+      "en": "ANALYSIS AND DESIGN OF ALGORITHMS"
+    },
+    "TEORIA DE LA COMPUTACION": {
+      "en": "COMPUTING THEORY"
+    },
+    "TECNOLOGIAS PARA EL DESARROLLO DE APLICACIONES WEB": {
+      "en": "TECHNOLOGIES FOR THE DEVELOPMENT OF WEB APPLICATIONS"
+    },
+    "PROCESAMIENTO DIGITAL DE SE\u00D1ALES": {
+      "en": "DIGITAL SIGNAL PROCESSING"
+    },
+    "INSTRUMENTACION Y CONTROL": {
+      "en": "INSTRUMENTATION AND CONTROL"
+    },
+    "ANALISIS Y DISE\u00D1O DE SISTEMAS": {
+      "en": "ANALYSIS AND DESIGN OF SYSTEMS"
+    },
+    "FORMULACION Y EVALUACION DE PROYECTOS INFORMATICOS": {
+      "en": "FORMULATION AND EVALUATION OF IT PROJECTS"
+    },
+    "INTELIGENCIA ARTIFICIAL": {
+      "en": "ARTIFICIAL INTELLIGENCE"
+    },
+    "SISTEMAS EN CHIP": {
+      "en": "SYSTEMS ON CHIP"
+    },
+    "DESARROLLO DE APLICACIONES MOVILES NATIVAS": {
+      "en": "NATIVE MOBILE APPLICATION DEVELOPMENT"
+    },
+    "SISTEMAS DISTRIBUIDOS": {
+      "en": "DISTRIBUTED SYSTEMS"
+    },
+    "LIDERAZGO PERSONAL": {
+      "en": "PERSONAL LEADERSHIP"
+    },
+    "DESARROLLO DE HABILIDADES SOCIALES PARA LA ALTA DIRECCION": {
+      "en": "SOFT SKILLS DEVELOPMENT FOR SENIOR MANAGEMENT"
+    },
+    "ESTANCIA PROFESIONAL": {
+      "en": "PROFESSIONAL STAY"
+    },
+
+    // LCD 2020 SUBJECTS
+
+    "LICENCIATURA EN CIENCIA DE DATOS": {
+      "en": "BACHELOR'S DEGREE IN DATA SCIENCE"
+    },
+    "INTRODUCCION A LA CIENCIA DE DATOS": {
+      "en": "INTRODUCTION TO DATA SCIENCE"
+    },
+    "ETICA Y LEGALIDAD": {
+      "en": "ETHICS AND LEGALITY"
+    },
+    "CALCULO MULTIVARIABLE": {
+      "en": "MULTIVARIABLE CALCULUS"
+    },
+    "METODOS NUMERICOS": {
+      "en": "NUMERICAL METHODS"
+    },
+    "PROBABILIDAD": {
+      "en": "PROBABILITY"
+    },
+    "PROGRAMACION PARA CIENCIA DE DATOS": {
+      "en": "PROGRAMMING FOR DATA SCIENCE"
+    },
+    "DESARROLLO DE APLICACIONES WEB": {
+      "en": "WEB APPLICATION DEVELOPMENT"
+    },
+    "COMPUTO DE ALTO DESEMPE\u00D1O": {
+      "en": "HIGH PERFORMANCE COMPUTING"
+    },
+    "ESTADISTICA": {
+      "en": "STATISTICS"
+    },
+    "BASES DE DATOS AVANZADAS": {
+      "en": "ADVANCED DATABASES"
+    },
+    "DESARROLLO DE APLICACIONES PARA ANALISIS DE DATOS": {
+      "en": "DEVELOPMENT OF APPLICATIONS FOR DATA ANALYSIS"
+    },
+    "METODOLOGIA DE LA INVESTIGACION Y DIVULGACION CIENTIFICA": {
+      "en": "RESEARCH METHODOLOGY AND SCIENTIFIC DIVULGATION"
+    },
+    "ANALISIS Y VISUALIZACION DE DATOS": {
+      "en": "DATA ANALYSIS AND VISUALIZATION"
+    },
+    "APRENDIZAJE DE MAQUINA E INTELIGENCIA ARTIFICIAL": {
+      "en": "MACHINE LEARNING AND ARTIFICIAL INTELLIGENCE"
+    },
+    "PROCESOS ESTOCASTICOS": {
+      "en": "STOCHASTIC PROCESSES"
+    },
+    "MATEMATICAS AVANZADAS PARA CIENCIA DE DATOS": {
+      "en": "ADVANCED MATHEMATICS FOR DATA SCIENCE"
+    },
+    "MINERIA DE DATOS": {
+      "en": "DATA MINING"
+    },
+    "ANALISIS DE SERIES DE TIEMPO": {
+      "en": "TIME SERIES ANALYSIS"
+    },
+    "ANALITICA AVANZADA DE DATOS": {
+      "en": "ADVANCED DATA ANALYTICS"
+    },
+    "MODELO PREDICTIVO": {
+      "en": "PREDICTIVE MODEL"
+    },
+    "PROCESAMIENTO DE LENGUAJE NATURAL": {
+      "en": "NATURAL LANGUAGE PROCESSING"
+    },
+    "ADMINISTRACION DE PROYECTOS DE TI": {
+      "en": "IT PROJECT MANAGEMENT"
+    },
+    "MODELOS ECONOMETRICOS": {
+      "en": "ECONOMETRIC MODELS"
+    },
+
+    // IA 2020 SUBJECTS
+
+    "INGENIERIA EN INTELIGENCIA ARTIFICIAL": {
+      "en": "ARTIFICIAL INTELLIGENCE ENGINEERING"
+    },
+    "FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL": {
+      "en": "FUNDAMENTALS OF ARTIFICIAL INTELLIGENCE"
+    },
+    "APRENDIZAJE DE MAQUINA": {
+      "en": "MACHINE LEARNING"
+    },
+    "VISION ARTIFICIAL": {
+      "en": "ARTIFICIAL VISION"
+    },
+    "PROCESAMIENTO DE SE\u00D1ALES": {
+      "en": "SIGNAL PROCESSING"
+    },
+    "ALGORITMOS BIOINSPIRADOS": {
+      "en": "BIO-INSPIRED ALGORITHMS"
+    },
+    "TECNOLOGIAS DE LENGUAJE NATURAL": {
+      "en": "NATURAL LANGUAGE TECHNOLOGIES"
+    },
+    "INGENIERIA DE SOFTWARE PARA SISTEMAS INTELIGENTES": {
+      "en": "SOFTWARE ENGINEERING FOR INTELLIGENT SYSTEMS"
+    },
+    "REDES NEURONALES Y APRENDIZAJE PROFUNDO": {
+      "en": "NEURAL NETWORKS AND DEEP LEARNING"
+    },
+    "COMPUTO PARALELO": {
+      "en": "PARALLEL COMPUTING"
+    },
+    "RECONOCIMIENTO DE VOZ": {
+      "en": "VOICE RECOGNITION"
+    },
+
+
+  };
+
+  if(plan == 20){
+    translations["semestre"] = {
+      "en": "semester"
+    }
   };
 
   const translate = (str, langCode) => {
