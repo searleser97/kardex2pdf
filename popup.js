@@ -88,6 +88,12 @@ function setPageBackgroundColor() {
     "calificacion": {
       "en": "grade"
     },
+    "ene": {
+      "en": "jan"
+    },
+    "feb": {
+      "en": "feb"
+    },
     "jun": {
       "en": "jun"
     },
@@ -325,7 +331,7 @@ function setPageBackgroundColor() {
     "DESARROLLO DE APLICACIONES WEB": {
       "en": "WEB APPLICATION DEVELOPMENT"
     },
-    "COMPUTO DE ALTO DESEMPEÑO": {
+    "COMPUTO DE ALTO DESEMPE\u00D1O": {
       "en": "HIGH PERFORMANCE COMPUTING"
     },
     "ESTADISTICA": {
@@ -373,6 +379,43 @@ function setPageBackgroundColor() {
     "MODELOS ECONOMETRICOS": {
       "en": "ECONOMETRIC MODELS"
     },
+
+    // IA 2020 SUBJECTS
+
+    "INGENIERIA EN INTELIGENCIA ARTIFICIAL": {
+      "en": "ARTIFICIAL INTELLIGENCE ENGINEERING"
+    },
+    "FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL": {
+      "en": "FUNDAMENTALS OF ARTIFICIAL INTELLIGENCE"
+    },
+    "APRENDIZAJE DE MAQUINA": {
+      "en": "MACHINE LEARNING"
+    },
+    "VISION ARTIFICIAL": {
+      "en": "ARTIFICIAL VISION"
+    },
+    "PROCESAMIENTO DE SE\u00D1ALES": {
+      "en": "SIGNAL PROCESSING"
+    },
+    "ALGORITMOS BIOINSPIRADOS": {
+      "en": "BIO-INSPIRED ALGORITHMS"
+    },
+    "TECNOLOGIAS DE LENGUAJE NATURAL": {
+      "en": "NATURAL LANGUAGE TECHNOLOGIES"
+    },
+    "INGENIERIA DE SOFTWARE PARA SISTEMAS INTELIGENTES": {
+      "en": "SOFTWARE ENGINEERING FOR INTELLIGENT SYSTEMS"
+    },
+    "REDES NEURONALES Y APRENDIZAJE PROFUNDO": {
+      "en": "NEURAL NETWORKS AND DEEP LEARNING"
+    },
+    "COMPUTO PARALELO": {
+      "en": "PARALLEL COMPUTING"
+    },
+    "RECONOCIMIENTO DE VOZ": {
+      "en": "VOICE RECOGNITION"
+    },
+
 
   };
 
